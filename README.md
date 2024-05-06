@@ -16,6 +16,8 @@ Simpal provides a read only terminal output that's easy to copy and paste.
 
 - ALT+C to copy
 
+- Scroll Bars to scroll through the terminal log
+
 ## Use Case
 
 - We relied on gnome-terminal and needed to remove this dependency for Cloud Seeder by [IPv6rs](https://ipv6.rs)
