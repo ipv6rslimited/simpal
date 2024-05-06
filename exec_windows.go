@@ -34,7 +34,7 @@ func executeCommand(term *Terminal, command string) {
   }
   defer cpty.Close()
 
-  pid, _, err := cpty.Spawn("C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", []string{"-NoLogo", "-NoExit", "-Command", command}, &syscall.ProcAttr{
+  pid, _, err := cpty.Spawn("C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", []string{"-ExecutionPolicy Bypass", "-NoLogo", "-NoExit", "-Command", command}, &syscall.ProcAttr{
     Env: append(os.Environ(), "TERM=dumb"),
   })
   if err != nil {
