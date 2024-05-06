@@ -2,6 +2,10 @@
 
 Simpal provides a read only terminal output that's easy to copy and paste.
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/ipv6rs/simpal/main/screenshot.png)
+
 ## Features
 
 - Runs on MacOS, Linux and Windows (Powershell)
