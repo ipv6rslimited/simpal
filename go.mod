@@ -1,4 +1,4 @@
-module simpal
+module github.com/ipv6rslimited/simpal
 
 go 1.22.2
 
