@@ -28,7 +28,7 @@ func executeCommand(term *Terminal, command string) {
   time.Sleep(500 * time.Millisecond)
 
   cmd := exec.Command("bash", "-c", command)
-  cmd.Env = append(os.Environ(), "TERM=dumb")
+  cmd.Env = append(os.Environ(), "TERM=dumb", "PATH=" + os.Getenv("PATH"))
 
   ptmx, err := pty.Start(cmd)
   if err != nil {
